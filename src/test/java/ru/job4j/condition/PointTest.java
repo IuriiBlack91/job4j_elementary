@@ -23,11 +23,19 @@ class PointTest {
     }
 
     @Test
-    void whenPoints21And1dot5And3dot5Then2dot23() {
+    void whenPoints21And1dot5And3dot5Then2dot54() {
         int x1 = 2, y1 = 1;
         double x2 = 1.5, y2 = 3.5;
-        double expected = 2.23;
-        double output = Point.distance(x1, y1, (int) x2, (int) y2);
+        double expected = 2.54;
+        double output = Point.distance(x1, y1, x2, y2);
+        assertThat(output).isEqualTo(expected, withPrecision(0.01));
+    }
+
+    @Test
+    void whenPoints0dot5And0dot5And5dot5And2dot5Then5dot38() {
+        double x1 = 0.5, y1 = 0.5, x2 = 5.5, y2 = 2.5;
+        double expected = 5.38;
+        double output = Point.distance(x1, y1, x2, y2);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 }
