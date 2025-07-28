@@ -8,6 +8,16 @@ import static org.junit.jupiter.api.Assertions.*;
 class FitnessTest {
 
     @Test
+    void whenIvanGreatNik() {
+        int ivan = 95;
+        int nik = 90;
+        int result = Fitness.calc(ivan, nik);
+        int expected = 0;
+        assertThat(result).isEqualTo(expected);
+
+    }
+
+    @Test
     void whenIvanLessByOneNik() {
         int ivan = 90;
         int nik = 95;
