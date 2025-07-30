@@ -26,7 +26,7 @@ class FindLoopTest {
 
     @Test
     void whenArrayHas6ThenMinus1() {
-        int[] data = new int[] {7, 8, 9};
+        int[] data = new int[] {7, 8, 9, 10};
         int element = 6;
         int result = FindLoop.indexOf(data, element);
         int expected = -1;
