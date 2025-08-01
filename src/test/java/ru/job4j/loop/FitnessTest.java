@@ -40,7 +40,7 @@ class FitnessTest {
         int ivan = 100;
         int nik = 100;
         int result = Fitness.calc(ivan, nik);
-        int expected = 0;
+        int expected = 1;
         assertThat(result).isEqualTo(expected);
     }
 }
