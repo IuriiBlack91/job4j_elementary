@@ -4,11 +4,12 @@ public class Turn {
 
     public static int[] back(int[] array) {
 
-        int[] tempArray = new int[array.length];
-
-        for (int i = 0; i < array.length; i++) {
-            tempArray[array.length - 1 - i] = array[i];
+        for (int i = 0; i < array.length / 2; i++) {
+            int xTemp = array[i];
+            array[i] = array[array.length - i - 1];
+            array[array.length - i - 1] = xTemp;
         }
-        return tempArray;
+        return array;
     }
+
 }
