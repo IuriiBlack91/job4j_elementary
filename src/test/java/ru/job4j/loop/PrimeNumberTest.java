@@ -7,6 +7,14 @@ import static org.assertj.core.api.Assertions.assertThat;
 class PrimeNumberTest {
 
     @Test
+    void when0Then0() {
+        int finish = 0;
+        int result = PrimeNumber.calc(finish);
+        int expected = 0;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
     void when5Then3() {
         int finish = 5;
         int result = PrimeNumber.calc(finish);
