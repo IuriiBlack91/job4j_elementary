@@ -8,7 +8,6 @@ public class Fitness {
             month++;
             ivan *= 3;
             nik *= 2;
-
         }
         return month;
     }
