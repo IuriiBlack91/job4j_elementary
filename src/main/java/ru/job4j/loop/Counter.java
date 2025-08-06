@@ -27,7 +27,7 @@ public class Counter {
         System.out.println(sum(5, 1));
         System.out.println(sum(3, 3));
 
-        // Сумма чётных чисел
+        // Сумма чётных чисел...
         System.out.println(sumByEven(1, 10));   // 30
         System.out.println(sumByEven(9, 1));    // 0
         System.out.println(sumByEven(6, 6));    // 6
