@@ -20,7 +20,7 @@ public class Counter {
     }
 
     public static void main(String[] args) {
-        // Сумма чисел
+        // Сумма чисел...
         System.out.println(sum(0, 5));
         System.out.println(sum(3, 8));
         System.out.println(sum(1, 1));
