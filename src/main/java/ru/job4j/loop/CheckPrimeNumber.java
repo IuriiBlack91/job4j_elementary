@@ -4,19 +4,14 @@ public class CheckPrimeNumber {
 
     public static boolean check(int number) {
 
-        boolean isPrime = true;
+        boolean isPrime = number > 1;
 
-        if (number < 2) {
-            isPrime = false;
-        } else {
-            for (int i = 2; i * i <= number; i++) {
-                if (number % i == 0) {
-                    isPrime = false;
-                    break;
-                }
-            }
+        for (int i = 2; i * i <= number; i++) {
+           if (number % i == 0) {
+              isPrime = false;
+              break;
+           }
         }
-
         return isPrime;
     }
 }
