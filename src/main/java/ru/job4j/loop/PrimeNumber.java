@@ -2,23 +2,15 @@ package ru.job4j.loop;
 
 public class PrimeNumber {
     public static int calc(int finish) {
-        if (finish < 2) {
-            return 0;
-        }
-        int count = 1;
 
-        for (int i = 3; i <= finish; i += 2) {
-            boolean isPrime = true;
-            for (int j = 3; j * j <= i; j += 2) {
-                if (i % j == 0) {
-                    isPrime = false;
-                    break;
+            int count = 0;
+
+            for (int i = 2; i <= finish; i++) {
+                if (CheckPrimeNumber.check(i)) {
+                    count++;
                 }
             }
-            if (isPrime) {
-                count++;
-            }
+
+            return count;
         }
-        return count;
-    }
 }
