@@ -6,17 +6,13 @@ public class EndsWith {
 
         boolean result = true;
 
-        if (postfix.length > word.length) {
-            result = false;
-        } else {
-            for (int i = 1; i <= postfix.length; i++) {
-                if (word[word.length - i] != postfix[postfix.length - i]) {
-                    result = false;
-                    break;
-                }
+        for (int i = 1; i <= postfix.length; i++) {
+            if (word.length - i < 0 || word[word.length - i]
+                != postfix[postfix.length - i]) {
+                result = false;
+                break;
             }
         }
         return result;
-
     }
 }
