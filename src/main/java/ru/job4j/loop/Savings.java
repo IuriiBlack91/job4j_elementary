@@ -7,8 +7,8 @@ public class Savings {
         int years = 0;
         double total = 0;
         do {
-            total += annualDeposit;
-            total += total * (percent / 100);
+            total += total * (percent / 100); // Сначала начисляем проценты
+            total += annualDeposit;           // Затем добавляем вклад
             years++;
         } while (total < goal);
         return years;
