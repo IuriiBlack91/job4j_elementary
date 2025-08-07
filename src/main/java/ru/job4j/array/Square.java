@@ -3,7 +3,7 @@ package ru.job4j.array;
 import java.util.jar.JarEntry;
 
 public class Square {
-
+    //...
     public static int[] calculate(int bound) {
         int[] result = new int[bound];
         for (int index = 0; index < bound; index++) {
