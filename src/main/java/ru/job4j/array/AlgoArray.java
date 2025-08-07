@@ -4,7 +4,7 @@ public class AlgoArray {
 
     public static void main(String[] args) {
 
-        // массив , меняем местами ячейки (5 и 1)
+        // массив , меняем местами ячейки (5 и 1):
         int[] array = new int[] {5, 3, 2, 1, 4};
         int temp = array[0];
         array[0] = array[3];
