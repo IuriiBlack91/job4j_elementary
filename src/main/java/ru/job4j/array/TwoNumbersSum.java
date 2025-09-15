@@ -5,7 +5,7 @@ public class TwoNumbersSum {
         int left = 0;
         int right = array.length - 1;
 
-        for (; left < right;) {
+        while (left < right) {
             int sum = array[left] + array[right];
 
             if (sum == target) {
